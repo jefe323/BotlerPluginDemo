@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Add.cs" />
     <Compile Include="Divide.cs" />
+    <Compile Include="Info.cs" />
     <Compile Include="Multiply.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Subtract.cs" />
