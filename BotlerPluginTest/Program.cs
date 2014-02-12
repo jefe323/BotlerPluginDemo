@@ -99,6 +99,8 @@ namespace BotlerPluginTest
                 catalog.Catalogs.Clear();
                 catalog.Catalogs.Add(new DirectoryCatalog(path + "/Plugins"));
                 catalog.Catalogs.Add(new AssemblyCatalog(Assembly.GetExecutingAssembly()));
+                container.Dispose();
+                container = new CompositionContainer(catalog);
                 container.ComposeParts(this);
 
                 Console.WriteLine("Reload Complete!");
